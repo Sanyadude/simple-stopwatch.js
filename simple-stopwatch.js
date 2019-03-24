@@ -49,7 +49,7 @@ var SimpleStopwatch = function (customOptions) {
             let timeValue = formatTime(realTime);
             setTime(timeValue);
         }, updateInterval);
-        executeCallbacks('start', );
+        executeCallbacks('start');
     };
     this.stop = () => {
         deleteIntervalHandler();
