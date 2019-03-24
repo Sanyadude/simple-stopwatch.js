@@ -2,7 +2,7 @@
 
 example of use - index.html
 
-#Usage
+# Usage
 <pre>
 var stopwatchOptions = {
     containerId: "stopwatch",
