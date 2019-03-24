@@ -15,6 +15,7 @@ var stopwatch = new SimpleStopwatch(stopwatchOptions);
 stopwatch.start();
 </pre>
 Methods to manipulate stopwatch -
+</br>
 Start counting time
 <pre>
 stopwatch.start()
