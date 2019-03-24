@@ -1,4 +1,4 @@
-# simple-timer.js
+# simple-stopwatch.js
 
 example of use - index.html
 
