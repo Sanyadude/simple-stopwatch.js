@@ -16,8 +16,7 @@
             containerId: "stopwatch1",
             interval: 1000,
             precision: 3,
-            startTime: 10,
-            callback: (time)=>console.log(time)
+            startTime: 10
         };
         var stopwatch2Options = {
             containerId: "stopwatch2",
@@ -29,6 +28,7 @@
         };
         var stopwatch1 = new SimpleStopwatch(stopwatch1Options);
         stopwatch1.start();
+        stopwatch1.on('update', (time) => console.log(time));
         var stopwatch2 = new SimpleStopwatch(stopwatch2Options);
         stopwatch2.start();
         var stopwatch3 = new SimpleStopwatch(stopwatch3Options);
