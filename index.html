@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <span id="timer"></span>
+    <script src="simple-timer.js"></script>
+    <script>
+        var timerOptions = {
+            containerId: "timer",
+            interval: 1000,
+            precision: 3,
+            startTime: 10,
+            callback: (time)=>console.log(time)
+        };
+        var timer = new SimpleTimer(timerOptions);
+        timer.start();
+    </script>
+</body>
+</html>
