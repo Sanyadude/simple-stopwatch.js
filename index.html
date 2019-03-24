@@ -7,18 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <span id="timer"></span>
-    <script src="simple-timer.js"></script>
+    <div><span>Stopwatch 1 - </span><span id="stopwatch1"></span></div>
+    <div><span>Stopwatch 2 - </span><span id="stopwatch2"></span></div>
+    <div><span>Stopwatch 3 - </span><span id="stopwatch3"></span></div>
+    <script src="simple-stopwatch.js"></script>
     <script>
-        var timerOptions = {
-            containerId: "timer",
+        var stopwatch1Options = {
+            containerId: "stopwatch1",
             interval: 1000,
             precision: 3,
             startTime: 10,
             callback: (time)=>console.log(time)
         };
-        var timer = new SimpleTimer(timerOptions);
-        timer.start();
+        var stopwatch2Options = {
+            containerId: "stopwatch2",
+            interval: 100,
+            precision: 1,
+        };
+        var stopwatch3Options = {
+            containerId: "stopwatch3"
+        };
+        var stopwatch1 = new SimpleStopwatch(stopwatch1Options);
+        stopwatch1.start();
+        var stopwatch2 = new SimpleStopwatch(stopwatch2Options);
+        stopwatch2.start();
+        var stopwatch3 = new SimpleStopwatch(stopwatch3Options);
+        stopwatch3.start();
     </script>
 </body>
 </html>

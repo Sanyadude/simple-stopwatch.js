@@ -1,6 +1,6 @@
 'use strict'
 
-var SimpleTimer = function(customOptions) {
+var SimpleStopwatch = function(customOptions) {
     let options = customOptions ? customOptions : {};
     let jsSecond = 1000;
     let time = options.startTime ? options.startTime : 0;
@@ -20,7 +20,9 @@ var SimpleTimer = function(customOptions) {
         if(container){
             container.innerText = newTime;
         }
-        options.callback(newTime);
+        if(options.callback) {
+            options.callback(newTime);
+        }
     };
     let setUpdateInterval = (newInterval) => updateInterval = newInterval;
     this.start = (newInterval) => {
@@ -47,4 +49,3 @@ var SimpleTimer = function(customOptions) {
     this.getTime = () => Number(time);
     this.isRunning = () => Boolean(handler);
 }
-
