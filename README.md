@@ -8,8 +8,7 @@ var stopwatchOptions = {
     containerId: "stopwatch",
     interval: 1000,
     precision: 3,
-    startTime: 10,
-    callback: (time)=>console.log(time)
+    startTime: 10
 };
 var stopwatch = new SimpleStopwatch(stopwatchOptions);
 stopwatch.start();
